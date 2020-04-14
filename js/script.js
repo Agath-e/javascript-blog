@@ -55,10 +55,8 @@ const optArticleSelector = '.post',
 
   let html = '';
 
-  for(let article of articles){
-    article.classList.remove('post');
+    for(let article of articles){
   
-
     /* get the article id */
     const articleId = article.getAttribute('id');
     console.log('articleId:', articleId);
@@ -73,13 +71,12 @@ const optArticleSelector = '.post',
     /* create HTML of the link */
     titleList.innerHTML = titleList.innerHTML + linkHTML;
     
-
     /* insert link into titleList */
     html = html + linkHTML;
-  }
+    }
   titleList.innerHTML = html;
 
-}
+  } 
  
 generateTitleLinks();
 const links = document.querySelectorAll('.titles a');
