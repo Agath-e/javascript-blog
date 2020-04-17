@@ -40,10 +40,10 @@ const titleClickHandler = function(event){
 };
   
 
-  const optArticleSelector = '.post',
-    optTitleSelector = '.post-title',
-    optTitleListSelector = '.titles',
-    optArticleTagsSelector = '.post-tags .list';
+const optArticleSelector = '.post',
+  optTitleSelector = '.post-title',
+  optTitleListSelector = '.titles',
+  optArticleTagsSelector = '.post-tags .list';
 
 function generateTitleLinks(customSelector = ''){
 
@@ -102,7 +102,7 @@ function generateTags(){
     console.log('articleTagsArray:', articleTagsArray) ; 
     /* START LOOP: for each tag */
     for(let tag of articleTagsArray){
-      console.log(tag)
+      console.log(tag);
       /* generate HTML of the link */
       const linkHTML = '<li><a href="#' + articleTags + '"><span>' + articleTagsArray + '</span></a></li>';
       console.log('linkHTML:', linkHTML);
@@ -131,7 +131,7 @@ function tagClickHandler(event){
   /* make a new constant "tag" and extract tag from the "href" constant */
   const tag = href.replace('#tag-', '');
   /* find all tag links with class active */
-  const TagLinks = document.querySelectorAll('a.active[href^="#tag-"]')
+  const TagLinks = document.querySelectorAll('a.active[href^="#tag-"]');
   /* START LOOP: for each active tag link */
   for(let tagLink of TagLinks){
     /* remove class active */
