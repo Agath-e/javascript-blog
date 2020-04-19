@@ -225,7 +225,6 @@ function tagClickHandler(event){
   /* execute function "generateTitleLinks" with article selector as argument */
   generateTitleLinks('[data-tags~="' + tag + '"]');
 }
-tagClickHandler(event);
 
 function addClickListenersToTags(){
   /* find all links to tags */
@@ -234,7 +233,7 @@ function addClickListenersToTags(){
   /* START LOOP: for each link */
   for(let link of links){
     /* add tagClickHandler as event listener for that link */
-    link.addEventListener('click', titleClickHandler);
+    link.addEventListener('click', tagClickHandler);
   /* END LOOP: for each link */
   } 
 }
@@ -298,7 +297,7 @@ function generateAuthor(){
   
 generateAuthor();
 
-function AuthorClickHandler(event){
+function authorClickHandler(event){
   /* prevent default action for this event */
   event.preventDefault();
   
@@ -330,7 +329,6 @@ function AuthorClickHandler(event){
   /* execute function "generateTitleLinks" with article selector as argument */
   generateTitleLinks('[data-author="' + author + '"]');
 }
-AuthorClickHandler(event);
 
 function addClickListenersToAuthor(){
   /* find all links to author */
@@ -339,7 +337,7 @@ function addClickListenersToAuthor(){
   /* START LOOP: for each link */
   for(let link of links){
     /* add tagClickHandler as event listener for that link */
-    link.addEventListener('click', titleClickHandler);
+    link.addEventListener('click', authorClickHandler);
   /* END LOOP: for each link */
   } 
 }
