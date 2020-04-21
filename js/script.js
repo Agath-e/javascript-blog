@@ -124,14 +124,14 @@ function calculateTagsClass(count, params){
   const normalizedMax = params.max - params.min;
   const percentage = normalizedCount / normalizedMax;
   const classNumber = Math.floor( percentage * (optCloudClassCount - 1) + 1 );
-  return optCloudClassPrefix +classNumber;
+  return optCloudClassPrefix + classNumber;
 }
 function calculateAuthorsClass(count, params){
   const normalizedCount = count - params.min;
   const normalizedMax = params.max - params.min;
   const percentage = normalizedCount / normalizedMax;
   const classNumber = Math.floor( percentage * (optCloudClassCount - 1) + 1 );
-  return optCloudClassPrefix +classNumber;
+  return optCloudClassPrefix + classNumber;
 }
 
 function generateTags(){  
@@ -198,7 +198,7 @@ function generateTags(){
     allTagsData.tags.push({
       tag: tag,
       count: allTags[tag],
-      className: calculateTagsClass(allTags[tag], tagsParams)
+      className: calculateTagsClass(allTags[tag], tagsParams),
     });
   }
   /* [NEW] END LOOP: for each tag in allTags: */
