@@ -113,27 +113,27 @@ body {
 }
 
 /*Tags*/
-.tag-size-tag-size-1 {
-  color: pink;
+.tags .tag-size-1 {
+  color: blue;
   font-size: 16px;
 }
 
-.tag-size-tag-size-2 {
-  color: blue;
+.tags .tag-size-2 {
+  color: green;
   font-size: 18px;
 }
 
-.tag-size-tag-size-3 {
+.tags .tag-size-3 {
   color: orange;
   font-size: 20px;
 }
 
-.tag-size-tag-size-4 {
-  color: green;
+.tags .tag-size-4 {
+  color: pink;
   font-size: 22px;
 }
 
-.tag-size-tag-size-5 {
+.tags .tag-size-5 {
   color: red;
   font-size: 24px;
 }

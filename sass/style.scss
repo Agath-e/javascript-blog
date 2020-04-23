@@ -124,27 +124,28 @@ body {
   }
 }
 /*Tags*/
-.tag-size-tag-size-1 {
-  color: pink;
-  font-size: 16px;
-}
-.tag-size-tag-size-2 {
-  color: blue;
-  font-size: 18px;
-}
-.tag-size-tag-size-3 {
-  color: orange;
-  font-size: 20px;
-}
-.tag-size-tag-size-4 {
-  color: green;
-  font-size: 22px;
-}
-.tag-size-tag-size-5 {
-  color: red;
-  font-size: 24px;
-}
+
 .tags {
+  .tag-size-1 {
+    color: blue;
+    font-size: 16px;
+  }
+  .tag-size-2 {
+    color: green;
+    font-size: 18px;
+  }
+  .tag-size-3 {
+    color: orange;
+    font-size: 20px;
+  }
+  .tag-size-4 {
+    color: pink;
+    font-size: 22px;
+  }
+  .tag-size-5 {
+    color: red;
+    font-size: 24px;
+  }
   li {
     display: inline;
     a {
